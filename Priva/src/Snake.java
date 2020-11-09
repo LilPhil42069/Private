@@ -1,9 +1,9 @@
+import javax.swing.JFrame;
 
-public class Snake {
+public class Snake extends JFrame {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args)  {
+      JFrame jf = new JFrame();
 	}
 
 }
