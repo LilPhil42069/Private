@@ -10,16 +10,21 @@ public class Keylistener implements KeyListener {
     char c = 'e';
 	@Override
 	public void keyPressed(KeyEvent kp) {
-		System.out.println("keypressed");
-		if(kp.getKeyCode() == KeyEvent.VK_W){
-			System.out.println("move forward");
-		}
-		if(kp.getKeyCode() == KeyEvent.VK_S) {
-			System.out.println("move backwards");
-		}if(kp.getKeyCode() == KeyEvent.VK_D) {
-			System.out.println("move right");
-		}if(kp.getKeyCode() == KeyEvent.VK_A) {
-			System.out.println("move left");
+		System.out.println("keypressed method");
+		switch(kp.getKeyCode()) {
+		case KeyEvent.VK_W:
+			System.out.println("move forward (line 16)");
+			break;
+		case KeyEvent.VK_S:
+			System.out.println("move backward (line 19)");
+			break;
+		case KeyEvent.VK_A:
+			System.out.println("move left (line 22)");
+			break;
+		case KeyEvent.VK_D:
+			System.out.println("move right (line 25)");
+			break;
+			
 		}
 	}
 
